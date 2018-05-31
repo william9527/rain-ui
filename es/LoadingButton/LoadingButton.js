@@ -6,6 +6,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 import t from 'prop-types';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 var LoadingButton = function (_Component) {
   _inherits(LoadingButton, _Component);
@@ -18,9 +21,9 @@ var LoadingButton = function (_Component) {
 
   LoadingButton.prototype.render = function render() {
     return React.createElement(
-      'div',
+      Button,
       null,
-      'test1234'
+      'Default'
     );
   };
 
